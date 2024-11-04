@@ -28,14 +28,14 @@ while True:  # Repeats infinitely unless a valid choice is given
 
 match choice:
     case 1:
-        login_admin()
+        login_admin()  # Login page for administrators
     case 2:
-        login_lecturer()
+        login_lecturer()  # Login page for lecturers
     case 3:
-        login_student()
+        login_student()  # Login page for students
     case 4:
-        login_registar()
+        login_registar()  # Login page for Registrar
     case 5:
-        login_accountant()
+        login_accountant()  # Login page for accountants
     case 6:
-        exit()
+        exit()  # Exits the program
