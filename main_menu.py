@@ -8,6 +8,69 @@ def check_courses_file():  # Checks if courses.txt exists, if no, it creates a n
         file.close()
 
 
+def check_admin_file():  # Checks if admins.txt exists, if no, it creates a new file
+    courses_filepath = "admins.txt"
+    try:
+        file = open(courses_filepath, "r")
+        file.close()
+    except FileNotFoundError:
+        file = open(courses_filepath, "x")
+
+        print("")
+        print("It seems like this is the first time running this program! Let's set up an admin account.")
+        print("")
+        print("==============")
+        print("Create Account")
+        print("==============")
+
+        admin_id = ""
+        while True:
+            try:
+                if len(admin_id) < 4:
+                    admin_id = input("Username (min. 4 characters): ")
+                else:
+                    break
+            except ValueError:
+                pass
+
+        admin_password = ""
+        while True:
+            try:
+                if len(admin_password) < 7:
+                    admin_password = input("Password (min. 7 characters): ")
+                else:
+                    break
+            except ValueError:
+                pass
+
+        file.write(f"{admin_id},{admin_password}")
+
+        print("Administrator account set up successfully!")
+        print("")
+
+        file.close()
+
+
+def check_registrar_file():  # Checks if registrars.txt exists, if no, it creates a new file
+    courses_filepath = "registrars.txt"
+    try:
+        file = open(courses_filepath, "r")
+        file.close()
+    except FileNotFoundError:
+        file = open(courses_filepath, "x")
+        file.close()
+
+
+def check_accountant_file():  # Checks if accountants.txt exists, if no, it creates a new file
+    courses_filepath = "accountants.txt"
+    try:
+        file = open(courses_filepath, "r")
+        file.close()
+    except FileNotFoundError:
+        file = open(courses_filepath, "x")
+        file.close()
+
+
 def check_students_file():  # Checks if students.txt exists, if no, it creates a new file
     students_filepath = "students.txt"
     try:
@@ -58,13 +121,16 @@ def check_grades_file():  # Checks if grades.txt exists, if no, it creates a new
         file.close()
 
 
-def main():
+def main_menu():
     check_students_file()
     check_fees_files()
     check_courses_file()
     check_grades_file()
     check_modules_file()
     check_lecturers_file()
+    check_registrar_file()
+    check_accountant_file()
+    check_admin_file()
 
     print("============================================")  # Prints the selection menu for the UMS
     print("Welcome to the University Management System!")
@@ -108,4 +174,4 @@ def main():
             exit()  # Exits the program
 
 
-main()
+main_menu()
