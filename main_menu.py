@@ -1,5 +1,5 @@
 def check_courses_file():  # Checks if courses.txt exists, if no, it creates a new file
-    courses_filepath = "courses.txt"
+    courses_filepath = "../files/courses.txt"
     try:
         file = open(courses_filepath, "r")
         file.close()
@@ -9,7 +9,7 @@ def check_courses_file():  # Checks if courses.txt exists, if no, it creates a n
 
 
 def check_admin_file():  # Checks if admins.txt exists, if no, it creates a new file
-    courses_filepath = "admins.txt"
+    courses_filepath = "../files/admins.txt"
     try:
         file = open(courses_filepath, "r")
         file.close()
@@ -52,7 +52,7 @@ def check_admin_file():  # Checks if admins.txt exists, if no, it creates a new 
 
 
 def check_registrar_file():  # Checks if registrars.txt exists, if no, it creates a new file
-    courses_filepath = "registrars.txt"
+    courses_filepath = "../files/registrars.txt"
     try:
         file = open(courses_filepath, "r")
         file.close()
@@ -62,7 +62,7 @@ def check_registrar_file():  # Checks if registrars.txt exists, if no, it create
 
 
 def check_accountant_file():  # Checks if accountants.txt exists, if no, it creates a new file
-    courses_filepath = "accountants.txt"
+    courses_filepath = "../files/accountants.txt"
     try:
         file = open(courses_filepath, "r")
         file.close()
@@ -72,7 +72,7 @@ def check_accountant_file():  # Checks if accountants.txt exists, if no, it crea
 
 
 def check_students_file():  # Checks if students.txt exists, if no, it creates a new file
-    students_filepath = "students.txt"
+    students_filepath = "../files/students.txt"
     try:
         file = open(students_filepath, "r")
         file.close()
@@ -82,7 +82,7 @@ def check_students_file():  # Checks if students.txt exists, if no, it creates a
 
 
 def check_lecturers_file():  # Checks if students.txt exists, if no, it creates a new file
-    lecturers_filepath = "lecturers.txt"
+    lecturers_filepath = "../files/lecturers.txt"
     try:
         file = open(lecturers_filepath, "r")
         file.close()
@@ -92,7 +92,7 @@ def check_lecturers_file():  # Checks if students.txt exists, if no, it creates 
 
 
 def check_modules_file():  # Checks if modules.txt exists, if no, it creates a new file
-    modules_filepath = "modules.txt"
+    modules_filepath = "../files/modules.txt"
     try:
         file = open(modules_filepath, "r")
         file.close()
@@ -102,7 +102,7 @@ def check_modules_file():  # Checks if modules.txt exists, if no, it creates a n
 
 
 def check_fees_files():  # Checks if fees.txt exists, if no, it creates a new file
-    fees_filepath = "fees.txt"
+    fees_filepath = "../files/fees.txt"
     try:
         file = open(fees_filepath, "r")
         file.close()
@@ -112,7 +112,7 @@ def check_fees_files():  # Checks if fees.txt exists, if no, it creates a new fi
 
 
 def check_grades_file():  # Checks if grades.txt exists, if no, it creates a new file
-    grades_filepath = "grades.txt"
+    grades_filepath = "../files/grades.txt"
     try:
         file = open(grades_filepath, "r")
         file.close()
